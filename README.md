@@ -81,7 +81,7 @@ rake db:migrate VERSION=0
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/hello-railsreact/issues).
+Feel free to check the [issues page](https://github.com/sheylaPozo/hello-railsreact/issues).
 
 ## Show your support
 
