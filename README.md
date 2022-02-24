@@ -5,7 +5,7 @@
                                |      Hello world         |
                                ----------------------------
                                 
-> A monolithic approach to using rails and react
+> A monolithic approach to using rails and react.
 
 ## Built With
 
