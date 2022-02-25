@@ -1,12 +1,22 @@
-import React from "react";
-import { useSelector } from "react-redux";
-import Loading from "./Loading";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getMessages } from '../redux/messages/messages';
+import './common.css';
 
 const Greeting = () => {
-  const { greeting, isLoading } = useSelector((state) => state.greetings);
+  const dispatch = useDispatch();
+  const { messages } = useSelector((state) => state);
+
+  console.log(messages);
+
+  useEffect(() => {
+    dispatch(getMessages());
+  }, []);
+
   return (
-    <div className='greetings'>
-      {isLoading ? <Loading /> : <h1>Greeting: {greeting}</h1>}
+    <div className="greeting">
+      <p>{messages[Math.floor(Math.random() * messages.length)]}</p>
     </div>
   );
 };
